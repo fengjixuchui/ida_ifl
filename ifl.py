@@ -2,13 +2,13 @@
 #
 # IFL - Interactive Functions List
 #
-# how to install: copy the script into plugins directory, i.e: C:\Program Files\IDA 6.8\plugins
+# how to install: copy the script into plugins directory, i.e: C:\Program Files\IDA <version>\plugins
 # then:
 # run from IDA menu: View -> PLUGIN_NAME
 # or press: PLUGIN_HOTKEY
 #
 """
-CC-BY: hasherezade, 2015-2017, run via IDA Pro >= 7.0
+CC-BY: hasherezade, run via IDA Pro >= 7.0
 """
 __VERSION__ = '1.3.3'
 __AUTHOR__ = 'hasherezade'
@@ -16,7 +16,8 @@ __AUTHOR__ = 'hasherezade'
 PLUGIN_NAME = "IFL - Interactive Functions List"
 PLUGIN_HOTKEY = "Ctrl-Alt-F"
 
-import idautils
+import idaapi
+from idautils import *
 from idaapi import *
 from idc import *
 
